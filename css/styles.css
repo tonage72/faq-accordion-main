@@ -20,11 +20,77 @@ html {
 	font-size: 16px;
 }
 
-.attribution {
-	font-size: 11px;
-	text-align: center;
+body {
+	height: 100vh;
+	background-image: url("../assets/images/background-pattern-mobile.svg");
+	background-repeat: no-repeat;
+	background-color: var(--color-light-pink);
 }
 
-.attribution a {
-	color: hsl(228, 45%, 44%);
+main {
+	background-color: white;
+	width: 85%;
+	margin: 40% auto;
+	container-type: inline-size;
+	padding: 7cqi;
+	border-radius: .5rem;
+}
+
+hr {
+	height: 1px;
+	border: none;
+	background-color: var(--color-grayish-purple);
+}
+
+header {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 10cqi;
+	margin-bottom: 6cqi;
+	align-items: center;
+	font-size: 14cqi;
+	font-weight: 700;
+}
+
+header img {
+	width: 10cqi;
+}
+
+.question-answer {
+	margin: 8cqi 0;
+}
+
+.question-answer .question {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 700;
+	gap: 10cqi;
+}
+
+.question-answer .answer {
+	display: none;
+	height: 0;
+	margin-top: 8cqi;
+	overflow: hidden;
+	color: var(--color-grayish-purple);
+	font-weight: 600;
+}
+
+.question-answer.active .answer {
+	display: block;
+	height: fit-content;
+}
+
+.question-answer .minus {
+	display: none;
+}
+
+.question-answer.active .minus {
+	display: block;
+}
+
+.question-answer.active .plus {
+	display: none;
 }
