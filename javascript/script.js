@@ -8,7 +8,6 @@ for (i=0; i < questionAnswer.length; i++) {
 		if (this.classList.contains('active')) {
 			for (i = 0; i < questionAnswer.length; i++) {
 				questionAnswer[i].classList.remove('active');
-				question[i].style.color = "black";
 			}
 		} else {
 			for (i = 0; i < questionAnswer.length; i++) {

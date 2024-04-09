@@ -70,7 +70,6 @@ header img {
 	align-items: center;
 	justify-content: space-between;
 	font-weight: 700;
-	color: black;
 	gap: 10cqi;
 }
 
@@ -81,6 +80,10 @@ header img {
 
 .question-answer.active .question {
 	color: black;
+}
+
+.question-answer.active .question:hover {
+	color: var(--color-grayish-purple);
 }
 
 .question-answer .answer {
