@@ -71,20 +71,13 @@ header img {
 	justify-content: space-between;
 	font-weight: 700;
 	gap: 10cqi;
-}
-
-.question-answer .question:hover {
 	cursor: pointer;
-	color: var(--color-grayish-purple);
 }
 
-.question-answer.active .question {
-	color: black;
-}
-
-.question-answer.active .question:hover {
+@media (hover: hover) {
+.question-answer .question:hover p {
 	color: var(--color-grayish-purple);
-}
+}}
 
 .question-answer .answer {
 	display: none;

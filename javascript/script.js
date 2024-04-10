@@ -1,6 +1,4 @@
-const plus = document.querySelectorAll('.plus');
 const questionAnswer = document.querySelectorAll('.question-answer')
-const question = document.querySelectorAll('.question');
 
 for (i=0; i < questionAnswer.length; i++) {
 	questionAnswer[i].addEventListener('click', function() {
