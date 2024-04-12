@@ -80,17 +80,21 @@ header img {
 }}
 
 .question-answer .answer {
-	display: none;
 	height: 0;
-	margin-top: 8cqi;
 	overflow: hidden;
 	color: var(--color-grayish-purple);
 	font-weight: 600;
+	transform: scale(0);
+	transition:
+		transform .4s ease-in-out,
+		height .4s ease-in-out,
+		margin .4s ease-in-out;
 }
 
 .question-answer.active .answer {
-	display: block;
-	height: fit-content;
+	height: 9rem;
+	margin-top: 8cqi;
+	transform: scale(1);
 }
 
 .question-answer .minus {
@@ -108,6 +112,5 @@ header img {
 @media (width >= 900px) {
 	body {
 		background-image: url("../assets/images/background-pattern-desktop.svg");
-		
 	}
 }
