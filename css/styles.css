@@ -81,12 +81,11 @@ header img {
 
 .question-answer .answer {
 	height: 0;
-	overflow: hidden;
 	color: var(--color-grayish-purple);
 	font-weight: 600;
-	transform: scale(0);
+	scale: 0;
 	transition:
-		transform .4s ease-in-out,
+		scale .4s ease-in-out,
 		height .4s ease-in-out,
 		margin .4s ease-in-out;
 }
@@ -94,7 +93,7 @@ header img {
 .question-answer.active .answer {
 	height: 9rem;
 	margin-top: 8cqi;
-	transform: scale(1);
+	scale: 1;
 }
 
 .question-answer .minus {
