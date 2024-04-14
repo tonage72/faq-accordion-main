@@ -31,7 +31,7 @@ body {
 main {
 	background-color: white;
 	width: 85%;
-	margin: 130px auto;
+	margin: 40vw auto;
 	container-type: inline-size;
 	border-radius: .5rem;
 	max-width: 600px;
@@ -42,7 +42,7 @@ p {
 }
 
 hr {
-	height: 1px;
+	height: 2px;
 	border: none;
 	background-color: var(--color-light-pink);
 	margin: 0 7cqi;
@@ -54,7 +54,7 @@ header {
 	gap: 10cqi;
 	margin-bottom: 6cqi;
 	align-items: center;
-	font-size: 14cqi;
+	font-size: clamp(1rem, 14cqi, 4rem);
 	font-weight: 700;
 	padding: 7cqi 7cqi 0 7cqi;
 }
@@ -88,12 +88,14 @@ header img {
 	grid-template-rows: 0fr;
 	color: var(--color-grayish-purple);
 	font-weight: 600;
-	scale: 0;
+	scale: .3;
+	rotate: 180deg;
 	margin-top: 0;
 	transition:
-		margin .4s ease-in-out,
-		scale .4s ease-in-out,
-		grid-template-rows .4s ease-in-out;
+		rotate .5s,
+		margin .5s,
+		scale .5s,
+		grid-template-rows .5s;
 }
 
 .question-answer div {
@@ -104,6 +106,7 @@ header img {
 	scale: 1;
 	grid-template-rows: 1fr;
 	margin-top: 1rem;
+	rotate: 0deg;
 }
 
 .question-answer .minus {
@@ -121,5 +124,11 @@ header img {
 @media (width >= 900px) {
 	body {
 		background-image: url("../assets/images/background-pattern-desktop.svg");
+	}
+}
+
+@media (width >= 550px) {
+	main {
+		margin-top: 12%;
 	}
 }
